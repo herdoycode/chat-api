@@ -22,8 +22,8 @@ app.use("/api/chats", chats);
 app.use("/api/messages", messages);
 app.use(error);
 
-const port = process.env.PORT || 5000;
-const server = app.listen(port, console.log(`Listening on port ${port}...`));
+const port = process.env.PORT || 9000;
+const server = app.listen(() => console.log(`Listening on posrt ${port}...`));
 
 mongoose
   .set("strictQuery", false)
